@@ -1,1 +1,48 @@
 
+
+
+################################
+# SAS RL builtin and remote envs
+################################
+
+# sasrl-env
+https://github.com/sassoftware/sasrlenv
+
+# From Anaconda Prompt
+where python
+cd "C:\ProgramData\Anaconda3"
+pip install sasrl-env==0.0.4
+pip install Box2D
+
+# Start a Python Environment 
+python
+from sasrl_env import runServer
+runServer.start(10200)
+
+###################################
+# Implement custom env with gym/sas
+###################################
+
+# Create files adhering to gym standards
+Folder1  = steup.py,      readme.md,       Folder2
+Folder2  = __init__.py,   envs(folder3)
+envs     = __init__.py,   custom_env.py
+
+# Install custom env
+Start Anaconda prompt
+From Folder 1 in Anaconda prompt
+pip install -e .
+
+###########
+# Resources
+###########
+
+# View openAI gym envs
+https://gym.openai.com/envs/#classic_control
+
+# SAS envs
+https://github.com/sassoftware/sasrlenv/blob/main/sasrl_env/client.py
+
+# Making a custom env in gym
+https://medium.com/@apoddar573/making-your-own-custom-environment-in-gym-c3b65ff8cdaa
+
